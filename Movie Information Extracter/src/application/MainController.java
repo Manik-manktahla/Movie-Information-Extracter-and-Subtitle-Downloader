@@ -95,16 +95,9 @@ public class MainController {
 		   
 		    openSubtitle=new OpenSubtitle();
 	        openSubtitle.login();
-//	        openSubtitle.ServerInfo();
-//	        openSubtitle.getSubLanguages();
-	         info=openSubtitle.getMovieSubsByName(nameofthemovie,"20","eng");
 	        
-//	        openSubtitle.getTvSeriesSubs("game of thrones","1","1","10","eng");
+	         info=openSubtitle.getMovieSubsByName(nameofthemovie,"20","eng");
 
-//	        openSubtitle.Search("/home/sachin/Vuze Downloads/Minions.2015.720p.BRRip.850MB.MkvCage.mkv");
-
-	       // openSubtitle.downloadSubtitle(new URL(info.get(0).getSubDownloadLink().toString().replaceAll(".gz","")),"F:\\subtitle.srt");
-	        //downloadlink.setText(info.get(0).getSubDownloadLink().toString());
 	        titlefomovie.setText(i.getTitle());
 	        boxofficecollection.setText(i.getBoxOffice());
 	        imdbvotes.setText(i.getImdbVotes());
